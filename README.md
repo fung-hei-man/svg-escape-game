@@ -1,5 +1,7 @@
 # SVG Escape Game
 
+This is a small SVG escape game to be played on browser
+
 ## Start
 - `cd` to project folder
 - `python3 -m http.server`
