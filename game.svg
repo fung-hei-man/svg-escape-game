@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="600px"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xhtml="http://www.w3.org/1999/xhtml"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:a="http://www.adobe.com/svg10-extensions" a:timeline="independent"
+     onload="top.load(evt)">
+
+  <defs>
+
+    <clipPath id="gameareaclip">
+      <rect x="20" y="20" width="600" height="560"/>
+    </clipPath>
+    
+    <pattern id="background_pattern" x="0" y="0" width="150" height="100" patternUnits="userSpaceOnUse">
+      <rect id="svg_11" height="97.999143" width="149.665357" y="0.00044" x="0.167321" stroke-width="5" stroke="#ffebcd" fill="#ffebcd"/>
+      <line fill-opacity="0" stroke="#fffff0" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_2" y2="6.333718" x2="146.166044" y1="6.333718" x1="114.000018" stroke-width="10" fill="none"/>
+      <line fill-opacity="0" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_3" y2="70.666488" x2="102.166429" y1="3.667075" x1="117.499628" stroke-width="10" stroke="#fffff0" fill="none"/>
+      <line fill-opacity="0" stroke="#fffff0" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_5" y2="67.999844" x2="105.499733" y1="67.666514" x1="16.500512" stroke-width="10" fill="none"/>
+      <line fill-opacity="0" stroke="#fffff0" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_6" y2="44.000054" x2="106.499724" y1="43.666724" x1="19.500485" stroke-width="10" fill="none"/>
+      <line fill-opacity="0" stroke="#fffff0" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_7" y2="20.666926" x2="111.499681" y1="20.333596" x1="22.500459" stroke-width="10" fill="none"/>
+      <ellipse fill-opacity="0" ry="10.333243" rx="10.666573" id="svg_8" cy="84.999696" cx="41.166963" stroke-width="7" stroke="#fffff0" fill="#fffff0"/>
+      <ellipse fill-opacity="0" ry="10.333243" rx="10.666573" id="svg_10" cy="84.999696" cx="85.499908" stroke-width="7" stroke="#fffff0" fill="#fffff0"/>
+    </pattern>
+    
+    <radialGradient id="player_color">
+      <stop offset="0.0" style="stop-color:yellow;stop-opacity:1"/>
+      <stop offset="0.8" style="stop-color:yellow;stop-opacity:1"/>
+      <stop offset="1.0" style="stop-color:orange;stop-opacity:1"/>
+    </radialGradient>
+
+    <filter height="200%" width="200%" y="-50%" x="-50%" id="svg_7_blur">
+      <feGaussianBlur stdDeviation="0.5" in="SourceGraphic"/>
+    </filter>
+
+    <filter id="svg_3_blur">
+     <feGaussianBlur stdDeviation="0.5" in="SourceGraphic"/>
+    </filter>
+
+    <g id="player-left">
+      <path stroke="#FFDFB8" id="svg_20" d="m35.710993,28.64663l4.063461,10.225567l-2.321983,-2.105264l-0.619195,2.406016l-1.857586,-2.857144l-1.547988,3.082708l-1.547988,-8.421057l3.83128,-2.330826z" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000"/>
+      <path id="svg_19" d="m4.323302,28.721818l-3.947362,10.225567l2.25564,-2.105264l0.601504,2.406016l1.804512,-2.857144l1.50376,3.082708l1.50376,-8.421056l-3.721814,-2.330827z" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#FFDFB8" fill="#000000"/>
+      <ellipse stroke="#ff0515" ry="18.427221" rx="19.965343" id="svg_1" cy="19.286595" cx="19.923342" stroke-width="0" fill="#FFDFB8"/>
+      <path stroke="#000000" id="svg_4" d="m0.568536,14.649319l38.800588,-0.16864l-0.799122,-2.276645l-0.71921,-1.517764l-0.879033,-1.770724l-1.278595,-1.433443l-1.438418,-1.602084l-1.198683,-1.096162l-1.598243,-1.096163l-1.438419,-1.011842l-1.598244,-0.927522l-2.397365,-0.674562l-1.11877,-0.25296l-2.157628,-0.590241l-1.518331,0l-1.837979,-0.084321l-1.598245,0.084321l-1.758067,0.16864l-1.678155,0.421601l-2.077716,0.674561l-1.837979,0.758882l-1.997805,1.180483l-1.518331,1.011842l-1.438419,1.264803l-1.43842,1.433443l-1.678155,2.276645l-1.198682,2.698246l-0.599341,2.276646z" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000"/>
+      <path id="svg_9" d="m7.304687,25.15625" opacity="0.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#FFDFB8" fill="#000000"/>
+      <path id="svg_10" d="m4.569031,24.588816l7.460938,-0.078125l0,-3.90625c0.039062,0.078125 -0.054687,-1.921876 -0.429689,-3.015625c-0.375001,-1.093748 -1.624998,-2.609373 -3.499999,-2.531248c-1.875,0.078125 -2.53125,0.593749 -3.328125,1.328124c-0.796875,0.734375 -0.828125,1.624999 -0.96875,2.515624c-0.140625,0.890625 -0.046875,4.531248 -0.070312,3.359375c-0.023438,-1.171872 0.101563,2.359375 0.015625,2.25c-0.085938,-0.109375 -0.476562,0.062502 0.820312,0.078125z" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#FFDFB8" fill="#000000"/>
+      <ellipse stroke="#FFDFB8" ry="1.650165" rx="0.891089" id="svg_11" cy="18.184165" cx="6.429963" stroke-opacity="null" stroke-width="0" fill="#fffcfc"/>
+      <path id="svg_12" d="m21.636709,24.43844l7.460938,-0.078125l0,-3.90625c0.039062,0.078125 -0.054687,-1.921876 -0.429689,-3.015625c-0.375001,-1.093748 -1.624998,-2.609373 -3.499999,-2.531248c-1.875,0.078125 -2.53125,0.593749 -3.328125,1.328124c-0.796875,0.734375 -0.828125,1.624999 -0.96875,2.515624c-0.140625,0.890625 -0.046875,4.531248 -0.070312,3.359375c-0.023438,-1.171872 0.101563,2.359375 0.015625,2.25c-0.085938,-0.109375 -0.476562,0.062502 0.820312,0.078125z" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#FFDFB8" fill="#000000"/>
+      <ellipse stroke="#FFDFB8" ry="1.650165" rx="0.891089" id="svg_13" cy="18.197723" cx="23.326926" stroke-opacity="null" stroke-width="0" fill="#fffcfc"/>
+      <path id="svg_22" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#FFDFB8" fill="#000000"/>
+      <line stroke-linecap="null" stroke-linejoin="null" id="svg_24" y2="28.277469" x2="3.888199" y1="25.946641" x1="4.564892" stroke="#FFAFCC" fill="none"/>
+      <line stroke="#FFAFCC" stroke-linecap="null" stroke-linejoin="null" id="svg_28" y2="28.427845" x2="7.196472" y1="26.097017" x1="7.873164" fill="none"/>
+      <line stroke="#FFAFCC" stroke-linecap="null" stroke-linejoin="null" id="svg_29" y2="28.352657" x2="10.429556" y1="26.021829" x1="11.106248" fill="none"/>
+      <line stroke="#FFAFCC" stroke-linecap="null" stroke-linejoin="null" id="svg_30" y2="28.277469" x2="22.835577" y1="25.946641" x1="21.632566" fill="none"/>
+      <line stroke="#FFAFCC" stroke-linecap="null" stroke-linejoin="null" id="svg_31" y2="28.202281" x2="25.993473" y1="25.871453" x1="24.790462" fill="none"/>
+      <line stroke="#FFAFCC" stroke-linecap="null" stroke-linejoin="null" id="svg_32" y2="28.127093" x2="28.925806" y1="25.796265" x1="27.722795" fill="none"/>
+      <path id="svg_34" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#FFDFB8" fill="#000000"/>
+      <path stroke="#ff0515" stroke-width="2" d="m12.991804,34.262296c0.118032,0 0.236063,0 0.472129,0c0.118034,0 0.236066,0 0.472132,0c0.118032,0 0.354098,0 0.472132,0c0.236066,0 0.475288,0.018833 0.590164,0c0.256869,-0.04211 0.354098,-0.081966 0.590164,-0.081966c0.236066,0 0.354098,-0.08197 0.590164,-0.08197c0.118034,0 0.24505,-0.050598 0.354098,-0.081966c0.154218,-0.044361 0.24505,-0.050598 0.3541,-0.081966c0.154215,-0.044361 0.24505,-0.050598 0.354098,-0.081966c0.154218,-0.044361 0.199883,-0.201542 0.354098,-0.245903c0.10905,-0.031368 0.236069,-0.081966 0.3541,-0.163933c0.118034,-0.08197 0.245047,-0.132568 0.354098,-0.163937c0.154215,-0.044361 0.236066,-0.163933 0.354098,-0.245899c0.118034,-0.08197 0.218683,-0.096157 0.354098,-0.163937c0.21411,-0.107166 0.354098,-0.163933 0.472132,-0.245903c0.118032,-0.081966 0.29022,-0.056839 0.354098,-0.163933c0.045168,-0.075726 0.127018,-0.132565 0.236066,-0.163933c0.154221,-0.044361 0.081851,-0.119576 0.236066,-0.163937c0.109048,-0.031368 0.081848,-0.119572 0.236066,-0.163933c0.109048,-0.031368 0.118032,-0.081966 0.236066,-0.081966c0,0 0.118032,-0.08197 0.118032,-0.08197c0.118034,0 0.118034,-0.081966 0.118034,-0.081966c0,0 0.118032,-0.081966 0.118032,-0.081966c0,-0.081968 0.172186,-0.056839 0.236066,-0.163935c0.04517,-0.075729 0.118032,-0.081968 0.118032,-0.163935c0,0 0.118034,-0.081966 0.118034,-0.081966c0.118032,0 0.118032,-0.081968 0.118032,-0.081968c0.118034,-0.081966 0.118034,-0.081966 0.118034,-0.081966c0,0 0,0 0,-0.081968l0,0" id="svg_42" fill="none"/>
+    </g>
+
+    <g id="player-right">
+      <path stroke="#FFDFB8" id="svg_20" d="m35.710993,28.64663l4.063461,10.225567l-2.321983,-2.105264l-0.619195,2.406016l-1.857586,-2.857144l-1.547988,3.082708l-1.547988,-8.421057l3.83128,-2.330826z" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000"/>
+      <path id="svg_19" d="m4.323302,28.721818l-3.947362,10.225567l2.25564,-2.105264l0.601504,2.406016l1.804512,-2.857144l1.50376,3.082708l1.50376,-8.421056l-3.721814,-2.330827z" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#FFDFB8" fill="#000000"/>
+      <ellipse stroke="#ff0515" ry="18.427221" rx="19.965343" id="svg_1" cy="19.286595" cx="19.923342" stroke-width="0" fill="#FFDFB8"/>
+      <path stroke="#000000" id="svg_4" d="m0.568536,14.649319l38.800588,-0.16864l-0.799122,-2.276645l-0.71921,-1.517764l-0.879033,-1.770724l-1.278595,-1.433443l-1.438418,-1.602084l-1.198683,-1.096162l-1.598243,-1.096163l-1.438419,-1.011842l-1.598244,-0.927522l-2.397365,-0.674562l-1.11877,-0.25296l-2.157628,-0.590241l-1.518331,0l-1.837979,-0.084321l-1.598245,0.084321l-1.758067,0.16864l-1.678155,0.421601l-2.077716,0.674561l-1.837979,0.758882l-1.997805,1.180483l-1.518331,1.011842l-1.438419,1.264803l-1.43842,1.433443l-1.678155,2.276645l-1.198682,2.698246l-0.599341,2.276646z" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000"/>
+      <path id="svg_9" d="m7.304687,25.15625" opacity="0.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#FFDFB8" fill="#000000"/>
+      <path id="svg_10" d="m10.634605,24.424882l7.460938,-0.078125l0,-3.90625c0.039062,0.078125 -0.054687,-1.921876 -0.429689,-3.015625c-0.375001,-1.093748 -1.624998,-2.609373 -3.499999,-2.531248c-1.875,0.078125 -2.53125,0.593749 -3.328125,1.328124c-0.796875,0.734375 -0.828125,1.624999 -0.96875,2.515624c-0.140625,0.890625 -0.046875,4.531248 -0.070312,3.359375c-0.023438,-1.171872 0.101563,2.359375 0.015625,2.25c-0.085938,-0.109375 -0.476562,0.062502 0.820312,0.078125z" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#FFDFB8" fill="#000000"/>
+      <ellipse stroke="#FFDFB8" ry="1.650165" rx="0.891089" id="svg_11" cy="18.184165" cx="15.282422" stroke-opacity="null" stroke-width="0" fill="#fffcfc"/>
+      <path id="svg_12" d="m27.702282,24.274506l7.460938,-0.078125l0,-3.90625c0.039062,0.078125 -0.054687,-1.921876 -0.429689,-3.015625c-0.375001,-1.093748 -1.624998,-2.609373 -3.499999,-2.531248c-1.875,0.078125 -2.53125,0.593749 -3.328125,1.328124c-0.796875,0.734375 -0.828125,1.624999 -0.96875,2.515624c-0.140625,0.890625 -0.046875,4.531248 -0.070312,3.359375c-0.023438,-1.171872 0.101563,2.359375 0.015625,2.25c-0.085938,-0.109375 -0.476562,0.062502 0.820312,0.078125z" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#FFDFB8" fill="#000000"/>
+      <ellipse stroke="#FFDFB8" ry="1.650165" rx="0.891089" id="svg_13" cy="18.361657" cx="32.507254" stroke-opacity="null" stroke-width="0" fill="#fffcfc"/>
+      <path id="svg_22" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#FFDFB8" fill="#000000"/>
+      <line stroke-linecap="null" stroke-linejoin="null" id="svg_24" y2="28.113534" x2="9.953773" y1="25.782706" x1="10.630465" stroke="#FFAFCC" fill="none"/>
+      <line stroke="#FFAFCC" stroke-linecap="null" stroke-linejoin="null" id="svg_28" y2="28.26391" x2="13.262045" y1="25.933082" x1="13.938737" fill="none"/>
+      <line stroke="#FFAFCC" stroke-linecap="null" stroke-linejoin="null" id="svg_29" y2="28.188722" x2="16.49513" y1="25.857894" x1="17.171822" fill="none"/>
+      <line stroke="#FFAFCC" stroke-linecap="null" stroke-linejoin="null" id="svg_30" y2="28.113534" x2="28.901151" y1="25.782706" x1="27.69814" fill="none"/>
+      <line stroke="#FFAFCC" stroke-linecap="null" stroke-linejoin="null" id="svg_31" y2="28.038346" x2="32.059047" y1="25.707518" x1="30.856036" fill="none"/>
+      <line stroke="#FFAFCC" stroke-linecap="null" stroke-linejoin="null" id="svg_32" y2="27.963158" x2="34.991379" y1="25.63233" x1="33.788368" fill="none"/>
+      <path id="svg_34" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#FFDFB8" fill="#000000"/>
+      <path transform="rotate(3.7246687412261963 22.90983581542979,32.75984573364258) " stroke="#ff0515" d="m18.155738,31.311476c0,0 0.028908,0.094067 0.171319,0.28723c0.127376,0.17277 0.16691,0.308681 0.256978,0.430847c0.1007,0.136586 0.256978,0.215423 0.342638,0.35904c0.085659,0.143614 0.171317,0.287228 0.256978,0.359038c0.171317,0.143617 0.187253,0.193341 0.342638,0.287228c0.098276,0.059379 0.070562,0.178533 0.256978,0.215424c0.083366,0.016499 0.085659,0.071807 0.256978,0.143617c0,0 0.101595,0.049731 0.25698,0.143614c0.098274,0.059379 0.145058,0.104751 0.256978,0.143614c0.158279,0.054957 0.25927,0.055311 0.342636,0.07181c0.186416,0.036891 0.316379,0.104751 0.428299,0.143614c0.158279,0.054957 0.256978,0.071807 0.342636,0.071807c0.171319,0 0.241881,0.106726 0.428297,0.143617c0.083368,0.016499 0.171319,0 0.25698,0c0.171319,0 0.171319,0.071807 0.342636,0.071807c0.085661,0 0.171319,0 0.342638,0c0.085661,0 0.256978,0 0.342638,0c0.171319,0 0.342638,0 0.428297,0c0.171319,0 0.256978,0 0.428297,0c0.085661,0 0.256978,0 0.342638,0c0.085659,0 0.184359,0.054961 0.342638,0c0.111918,-0.038863 0.184359,-0.016846 0.342636,-0.071807c0.111922,-0.038863 0.171319,-0.07181 0.25698,-0.07181c0.085659,0 0.230718,-0.032944 0.342636,-0.071807c0.158279,-0.054961 0.230718,-0.104751 0.342638,-0.143614c0.079139,-0.02748 0.25927,0.016499 0.342638,0c0.186416,-0.036891 0.263498,-0.044327 0.342636,-0.071807c0.111922,-0.038863 0.177839,-0.04433 0.25698,-0.07181c0.111918,-0.038863 0.171317,-0.071807 0.256978,-0.071807c0,0 0.085659,0 0.085659,0c0.085661,-0.071807 0.085661,-0.071807 0.085661,-0.071807l0.085659,0" id="svg_45" fill-opacity="null" stroke-opacity="null" stroke-width="2" fill="none"/>
+    </g>
+
+    <g id="monster-right">
+      <ellipse stroke="#000" transform="rotate(39.07039260864258 28.882099151611325,28.637439727783207) " ry="2.222222" rx="6.745801" id="monster-right-hand" cy="28.637442" cx="28.8821" stroke-opacity="null" fill="#e5e5e5"/>
+      <ellipse stroke="#000" transform="rotate(-39.17099380493164 7.183907985687257,25.823755264282227) " ry="2.222222" rx="7.471265" id="monster-right-hand1" cy="25.823755" cx="7.183908" stroke-opacity="null" fill="#e5e5e5"/>
+      <path stroke="#000" transform="rotate(-179.98095703125 17.46843910217285,20.399623870849606) " id="monster-right-body" d="m21.6925,38.107876c5.981384,-1.980761 9.275066,-6.772753 8.300752,-12.142533c-0.153588,-0.846523 -1.261774,-4.671114 -2.341021,-7.162452c-1.079237,-2.491327 -1.660757,-5.873897 -1.181957,-7.655376c0.4788,-1.781479 0.995915,-3.013618 2.986608,-5.08592c1.990703,-2.072292 5.061474,-2.340148 4.915479,-2.648227c-0.145985,-0.308079 -3.328503,-1.997545 -6.09098,-2.035155c-2.762477,-0.03761 -3.735294,-0.112436 -8.515538,1.602659c-4.780254,1.715104 -10.042249,4.715469 -14.03048,8.722422c-3.988231,4.006952 -4.915468,9.773571 -5.1516,14.812947c-0.236131,5.039376 1.293767,6.646847 2.717747,8.514186c1.42398,1.867339 6.510519,4.460778 10.325918,4.403111c2.226773,-0.033676 5.349323,-0.559901 6.075107,-0.800245l0,0l0,0l0,0l0,0l0,0l0,0l0,0l0,0l0,0l0,0l0,0l-0.078526,-0.00003z" fill="#e5e5e5" stroke-width="1.5"/>
+      <ellipse stroke="#000" ry="5.685094" rx="5.823755" id="svg_4" cy="11.968619" cx="14.243295" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#fff"/>
+      <ellipse stroke="#000" ry="5.685094" rx="5.823755" id="svg_6" cy="11.891991" cx="25.124521" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#fff"/>
+      <ellipse stroke="#000" ry="3.366174" rx="3.448276" id="svg_7" cy="12.831599" cx="16.159005" stroke-opacity="null" fill="#000000"/>
+      <ellipse stroke="#000" ry="3.366174" rx="3.448276" id="svg_8" cy="13.061484" cx="22.902299" stroke-opacity="null" fill="#000000"/>
+      <ellipse stroke="#000" transform="rotate(23.656227111816406 18.45785331726072,23.563219070434574) " ry="4.176245" rx="2.528736" id="svg_9" cy="23.563218" cx="18.457854" stroke-opacity="null" fill="#000000"/>
+    </g>
+
+    <g id="monster-left">
+      <ellipse stroke="#000" transform="rotate(11.670816421508789 26.72413635253904,24.061302185058587) " ry="2.222222" rx="7.471265" id="monster-left-hand" cy="24.061303" cx="26.724138" stroke-opacity="null" fill="#e5e5e5"/>
+      <ellipse transform="rotate(-39.17099380493164 6.800765991210945,28.19923400878907) " stroke="#000" ry="2.222222" rx="7.471265" id="monster-left-hand1" cy="28.199234" cx="6.800766" stroke-opacity="null" fill="#e5e5e5"/>
+      <path stroke="#000" transform="rotate(-179.98095703125 17.468151092529293,20.469499588012688) " id="monster-left-body" d="m13.346073,38.177753c-5.83697,-1.980761 -9.05113,-6.772753 -8.10034,-12.142533c0.14988,-0.846523 1.23131,-4.671114 2.2845,-7.162452c1.05318,-2.491327 1.62066,-5.873897 1.15342,-7.655376c-0.46724,-1.781479 -0.97187,-3.013618 -2.9145,-5.08592c-1.94264,-2.072292 -4.93927,-2.340148 -4.7968,-2.648227c0.14246,-0.308079 3.24814,-1.997545 5.94392,-2.035155c2.69578,-0.03761 3.64511,-0.112436 8.30994,1.602659c4.66484,1.715104 9.79979,4.715469 13.69173,8.722422c3.89194,4.006952 4.79679,9.773571 5.02722,14.812947c0.23043,5.039376 -1.26253,6.646847 -2.65213,8.514186c-1.3896,1.867339 -6.35333,4.460778 -10.07661,4.403111c-2.17301,-0.033676 -5.22017,-0.559901 -5.92843,-0.800245l0,0l0,0l0,0l0,0l0,0l0,0l0,0l0,0l0,0l0,0l0,0l0.07663,-0.00003z" fill="#e5e5e5" stroke-width="1.5"/>
+      <ellipse stroke="#000" ry="5.685094" rx="5.823755" id="svg_4" cy="11.662106" cx="9.798851" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#fff"/>
+      <ellipse stroke="#000" ry="5.685094" rx="5.823755" id="svg_6" cy="11.585477" cx="20.680077" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#fff"/>
+      <ellipse stroke="#000" ry="3.366174" rx="3.448276" id="svg_7" cy="12.525086" cx="11.71456" stroke-opacity="null" fill="#000000"/>
+      <ellipse stroke="#000" ry="3.366174" rx="3.448276" id="svg_8" cy="12.754971" cx="18.457855" stroke-opacity="null" fill="#000000"/>
+      <ellipse transform="rotate(-10.82060718536377 15.545976638793984,23.793104171752926) " ry="4.176245" rx="2.528736" id="svg_9" cy="23.793103" cx="15.545977" stroke-opacity="null" stroke="#000" fill="#000000"/>
+    </g>
+
+    <g id="bullet">
+      <circle cx="5" cy="5" r="6" style="fill:crimson"/>
+      <circle cx="6" cy="3" r="2" style="fill:lavenderblush"/>
+    </g>
+
+    <g id="monsterBullet">
+      <circle cx="5" cy="5" r="5" style="fill:black"/>
+      <circle cx="6" cy="3" r="1" style="fill:grey"/>
+    </g>
+
+    <g id="goodthing">
+      <path stroke="#0e5e0d" stroke-width="2" id="svg_9" d="m0.69899,4.636893l0,0c0,1.972983 5.506903,3.572403 12.300012,3.572403c6.793108,0 12.299999,-1.599419 12.299999,-3.572403l0,0c0,-1.972983 5.506903,-3.572403 12.300012,-3.572403c6.793108,0 12.300012,1.599419 12.300012,3.572403l0,28.579248c0,-1.972983 -5.506903,-3.572416 -12.300012,-3.572416c-6.793108,0 -12.300012,1.599432 -12.300012,3.572416c0,1.972983 -5.506891,3.572403 -12.299999,3.572403c-6.793108,0 -12.300012,-1.599419 -12.300012,-3.572403l0,-28.579248z" fill="#dbffdb"/>
+      <path stroke="#546433" id="svg_1" d="m10.402792,30.317882l0,2.174345l-2.009592,0l0,-2.149838c-3.297702,-0.467362 -4.742792,-3.271346 -4.742792,-3.271346l2.054786,-1.776877c0,0 1.309656,2.361127 3.680531,2.361127c1.309533,0 2.303102,-0.725433 2.303102,-1.964039c0,-2.898373 -7.542665,-2.546911 -7.542665,-7.9223c0,-2.336816 1.783782,-4.020289 4.245966,-4.417377l0,-2.17412l2.009674,0l0,2.172925c1.716052,0.233772 3.748247,1.168486 3.748247,3.178967l0,1.542262l-2.664508,0l0,-0.74772c0,-0.771046 -0.94935,-1.285218 -2.010552,-1.285218c-1.35477,0 -2.348353,0.700968 -2.348353,1.682474c0,2.967481 7.542665,2.243215 7.542665,7.875702c0.001086,2.31432 -1.669827,4.323972 -4.266508,4.721032l0,0z" stroke-width="1.5" fill="#54c470"/>
+      <text font-weight="bold" stroke="#62612C" transform="matrix(1.0352784405982234,0,0,1.0986345784688165,-2.51514685479967,2.5945998755141466) " xml:space="preserve" text-anchor="start" font-family="Georgia, Times, 'Times New Roman', serif" font-size="22" id="svg_10" y="20.877548" x="19.041991" stroke-width="0" fill="#546433">20</text>
+    </g>
+
+    <g id="portal">
+      <rect stroke="#006266" id="svg_2" height="39.588505" width="31.851874" y="0.329204" x="8.765424" stroke-width="0" fill="#6ed9e5"/>
+      <ellipse stroke="#006266" ry="19.547338" rx="6.872433" id="svg_1" cy="19.958846" cx="7.736617" stroke-width="0" fill="#0bb7b7"/>
+      <ellipse stroke="#006266" filter="url(#svg_3_blur)" ry="18.353922" rx="3.703706" id="svg_3" cy="19.835391" cx="10.164602" stroke-width="0" fill="#0d9191"/>
+      <ellipse stroke="#006266" ry="19.547338" rx="6.872433" id="svg_4" cy="20.123455" cx="7.654313" stroke-width="1.5" fill="none"/>
+      <line stroke="#006266" stroke-linecap="null" stroke-linejoin="null" id="svg_5" y2="0.411508" x2="40.205775" y1="0.411508" x1="8.436205" fill-opacity="null" stroke-opacity="null" fill="none"/>
+      <line stroke="#006266" stroke-linecap="null" stroke-linejoin="null" id="svg_6" y2="39.670793" x2="40.123471" y1="39.670793" x1="8.3539" fill-opacity="null" stroke-opacity="null" fill="none"/>
+    </g>
+
+  </defs>
+
+  <rect width="100%" height="100%" style="fill:url(#background_pattern);stroke:tan;stroke-width:4" />
+
+  <rect x="20" y="20" width="600" height="560" style="fill:black;stroke:sandybrown;stroke-width:5" />
+  
+  <g id="infopanal" transform="translate(620,20)">
+    <g id="timer" transform="translate(0,180)">
+      <text x="90" y="0" style="fill:saddlebrown;font-size:30px;text-anchor:middle;font-weight:bold;">Time: </text>
+      <text id="timertext" x="90" y="50" style="fill:chocolate;font-size:30px;text-anchor:middle;font-weight:bold;">60</text>
+    </g>
+    <g id="bullet" transform="translate(0,290)">
+      <text x="90" y="0" style="fill:saddlebrown;font-size:20px;text-anchor:middle;font-weight:bold;">Score: </text>
+      <text id="scoretext" x="90" y="30" style="fill:chocolate;font-size:20px;text-anchor:middle;font-weight:bold;">0</text>
+    </g>
+    <g id="bullet" transform="translate(0,350)">
+      <text x="90" y="0" style="fill:saddlebrown;font-size:20px;text-anchor:middle;font-weight:bold;">Bullet Left: </text>
+      <text id="bullettext" x="90" y="30" style="fill:chocolate;font-size:20px;text-anchor:middle;font-weight:bold;">8</text>
+    </g>
+    <g id="bullet" transform="translate(0,410)">
+      <text x="90" y="0" style="fill:saddlebrown;font-size:20px;text-anchor:middle;font-weight:bold;">Level: </text>
+      <text id="leveltext" x="90" y="30" style="fill:chocolate;font-size:20px;text-anchor:middle;font-weight:bold;">1</text>
+    </g>
+    <g id="cheatmode" transform="translate(0,470)">
+      <text x="90" y="0" style="fill:saddlebrown;font-size:20px;text-anchor:middle;font-weight:bold;">Cheat Mode: </text>
+      <text id="cheatmodetext" x="90" y="30" style="fill:chocolate;font-size:20px;text-anchor:middle;font-weight:bold;">OFF</text>
+    </g>
+  </g>
+
+  <g style="clip-path:url(#gameareaclip)">
+    <g transform="translate(20,20)">
+      <g id="gamearea" transform="translate(0,0)" width="600" height="560">
+        <rect x="0" y="0" width="600" height="560" style="fill:white" />
+
+        <g id="platforms">
+          <rect x="0" y="540" width="600" height="20" style="fill:cadetblue" disappear="false"/>
+          <rect x="0" y="520" width="40" height="20" style="fill:cadetblue" disappear="false"/>
+
+          <rect x="260" y="520" width="100" height="20" style="fill:cadetblue" disappear="false"/>
+          <rect x="280" y="500" width="60" height="20" style="fill:cadetblue" disappear="false"/>
+          <rect x="300" y="480" width="20" height="40" style="fill:cadetblue" disappear="false"/>
+
+          <rect x="420" y="500" width="40" height="40" style="fill:cadetblue" disappear="false"/>
+
+          <rect x="120" y="440" width="60" height="20" style="fill:cadetblue" disappear="false"/>
+          <rect x="100" y="420" width="160" height="20" style="fill:cadetblue" disappear="false"/>
+          <rect x="60" y="400" width="140" height="20" style="fill:cadetblue" disappear="false"/>
+          <rect x="100" y="380" width="60" height="20" style="fill:cadetblue" disappear="false"/>
+          <rect x="80" y="360" width="100" height="20" style="fill:cadetblue" disappear="false"/>
+          <rect x="120" y="340" width="40" height="20" style="fill:cadetblue" disappear="false"/>
+
+          <rect x="360" y="440" width="80" height="20" style="fill:cadetblue" disappear="false"/>
+          <rect x="400" y="420" width="100" height="20" style="fill:cadetblue" disappear="false"/>
+          <rect x="440" y="400" width="20" height="20" style="fill:cadetblue" disappear="false"/>
+
+          <rect x="500" y="480" width="60" height="20" style="fill:cadetblue" disappear="false"/>
+          <rect x="540" y="460" width="60" height="20" style="fill:cadetblue" disappear="false"/>
+          <rect x="580" y="440" width="40" height="20" style="fill:cadetblue" disappear="false"/>
+
+          <rect x="300" y="340" width="120" height="20" style="fill:cadetblue" disappear="false"/>
+          <rect x="260" y="320" width="100" height="20" style="fill:cadetblue" disappear="false"/>
+          <rect x="220" y="300" width="80" height="20" style="fill:lightseagreen" disappear="true" touched="false" delete="false"/>
+
+          <rect x="40" y="260" width="80" height="20" style="fill:cadetblue" disappear="false"/>
+          <rect x="80" y="240" width="100" height="20" style="fill:cadetblue" disappear="false"/>
+          <rect x="120" y="220" width="40" height="20" style="fill:cadetblue" disappear="false"/>
+          <rect x="140" y="200" width="20" height="20" style="fill:lightseagreen" disappear="true" touched="false" delete="false"/>
+
+          <rect x="440" y="260" width="160" height="20" style="fill:cadetblue" disappear="false"/>
+          <rect x="500" y="240" width="120" height="20" style="fill:cadetblue" disappear="false"/>
+          <rect x="540" y="220" width="80" height="20" style="fill:cadetblue" disappear="false"/>
+
+          <rect id="movingPlatform" x="40" y="140" width="60" height="20" style="fill:cadetblue" lowY="200" highY="60"/>
+
+          <rect x="180" y="140" width="320" height="20" style="fill:lightseagreen" disappear="true" touched="false" delete="false"/>
+          <rect x="260" y="120" width="200" height="20" style="fill:cadetblue" disappear="false"/>
+          <rect x="300" y="80" width="40" height="40" style="fill:cadetblue" disappear="false"/>
+          <rect x="120" y="60" width="200" height="20" style="fill:cadetblue" disappear="false"/>
+
+          <rect x="420" y="40" width="180" height="20" style="fill:cadetblue" disappear="false"/>
+
+          <rect x="570" y="500" width="30" height="10" style="opacity:0" disappear="false"/>
+          <rect x="570" y="180" width="30" height="10" style="opacity:0" disappear="false"/>
+        </g>
+
+        <g id="portals">
+          <use x="560" y="500" xlink:href="#portal"></use>
+          <use x="560" y="180" xlink:href="#portal"></use>
+        </g>
+
+
+        <g id="exit" transform="translate(560,0)">
+          <text stroke="#00ff00" transform="matrix(1.7446281909942627,0,0,1.7446281909942627,-2.4084068052470684,-0.6399148516356945) " font-weight="bold" xml:space="preserve" text-anchor="start" font-family="'Palatino Linotype', 'Book Antiqua', Palatino, serif" font-size="5" id="svg_4" y="4.799498" x="6.246516" stroke-width="0" fill="#049907">E x i t</text>
+          <rect stroke="#00acea" stroke-width="0" id="svg_5" height="30.319887" width="40.468979" y="9.66387" x="-0.326645" fill="#b5f8fc"/>
+          <rect stroke="null" transform="rotate(-32.177642822265625 9.99527072906495,24.940296173095707) " filter="url(#svg_7_blur)" id="svg_7" height="34.686509" width="3.835044" y="7.597042" x="8.077749" stroke-width="NaN" fill="#e6f6f7"/>
+          <ellipse stroke="#00acea" ry="1.006925" rx="0.923015" id="svg_12" cy="25.065194" cx="22.504755" stroke-width="0" fill="#426373"/>
+          <rect stroke="null" transform="rotate(-32.177642822265625 30.456121444702152,24.9402961730957) " filter="url(#svg_7_blur)" id="svg_15" height="34.686509" width="3.835044" y="7.597042" x="28.538601" stroke-width="NaN" fill="#e6f6f7"/>
+          <ellipse stroke="#00acea" ry="1.006925" rx="0.923015" id="svg_16" cy="25.065194" cx="22.504755" stroke-width="0" fill="#426373"/>
+          <ellipse stroke="#00acea" ry="1.006925" rx="0.923015" id="svg_17" cy="25" cx="16.790463" stroke-width="0" fill="#426373"/>
+          <rect stroke="#00acea" id="svg_14" height="29.823819" width="19.785857" y="10.016268" x="20.025774" stroke-width="0.5" fill="none"/>
+          <rect stroke="#00acea" id="svg_8" height="29.823819" width="19.693693" y="9.924102" x="0.210084" stroke-width="0.5" fill="none"/>
+          <line stroke="#00ff00" x1="-0.276502" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_2" y2="9.260778" x2="40.184356" y1="9.260778" fill="none"/>
+          <rect id="exitcoor" height="40" width="40" y="0" x="0" fill-opacity="null" stroke-opacity="null" stroke-width="0.5" fill="none"/>
+        </g>
+
+        <g id="player"/>
+
+        <g id="playerName">
+          <text id="nameText" style="fill:darkslategray;font-size:12px;text-anchor:middle">Anonymous</text>
+        </g>
+
+        <g id="monsters"/>
+
+        <g id="monsterBullets"/>
+
+        <g id="bullets"/>
+
+        <g id="goodthings"/>
+
+        <g id="startpopup" transform="translate(100,70)" style="visibility:hidden">
+          <rect x="0" y="0" width="400" height="425" style="fill:white;fill-opacity:0.9;stroke:rebeccapurple;stroke-width:2;stroke-dasharray:5;"/>
+          <text x="200" y="40"
+            style="fill:darkmagenta;font-size:22px;font-weight:bold;text-anchor:middle;font-family:papyrus">Ecsape From Ghost Shopping Mall</text>
+          <text x="200" y="75" style="fill:darkslateblue;font-size:18px;text-anchor:middle;font-family:palatino">You are shopping in a mall. You need to collect </text>
+          <text x="200" y="100" style="fill:darkslateblue;font-size:18px;text-anchor:middle;font-family:palatino">all <tspan style="fill:mediumvioletred;font-style:italic">money</tspan> in order to buy your favourite.</text>
+          <text x="200" y="125" style="fill:darkslateblue;font-size:18px;text-anchor:middle;font-family:palatino">Use the <tspan style="fill:mediumvioletred;font-style:italic">N</tspan> key to go left or <tspan style="fill:mediumvioletred;font-style:italic">M</tspan> key to go right and</text>
+          <text x="200" y="150" style="fill:darkslateblue;font-size:18px;text-anchor:middle;font-family:palatino">the <tspan style="fill:mediumvioletred;font-style:italic">Z</tspan> key to jump.</text>
+          
+          <text x="200" y="180" style="fill:darkslateblue;font-size:18px;text-anchor:middle;font-family:palatino">Suddenly, there are some ghosts chasing after</text> 
+          <text x="200" y="205" style="fill:darkslateblue;font-size:18px;text-anchor:middle;font-family:palatino">you. You will die if you touch them. Shoot and</text>
+          <text x="200" y="230" style="fill:darkslateblue;font-size:18px;text-anchor:middle;font-family:palatino">kill them by the <tspan style="fill:mediumvioletred;font-style:italic">spacebar</tspan>.</text>
+          <text x="200" y="260" style="fill:darkslateblue;font-size:18px;text-anchor:middle;font-family:palatino">Pick all the money <tspan style="fill:mediumvioletred;font-style:italic">as fast as you can and go to </tspan></text>
+          <text x="200" y="285" style="fill:darkslateblue;font-size:18px;text-anchor:middle;font-family:palatino"><tspan style="fill:mediumvioletred;font-style:italic">the exit.</tspan> Time left will be added to your score.</text>
+
+          <text x="200" y="330" style="fill:crimson;font-size:20px;text-anchor:middle;font-family:palatino">SO, START ESCAPING NOW!</text>
+
+          <g transform="translate(150,350)" cursor="pointer" onclick="top.startonclick()">
+            <rect x="0" y="0" width="100" height="30" style="fill:white;stroke:navy;stroke-width:2"/>
+            <text x="50" y="20" style="fill:navy;font-size:17px;font-family:papyrus;text-anchor:middle;font-weight:bold;">Start</text>
+          </g>
+
+          <text x="310" y="415" style="fill:darkslateblue;font-size:15px;text-anchor:middle;font-family:palatino">Fung Hei Man 20189503</text>
+        </g>
+
+        <g id="levelpopup" transform="translate(100,210)" style="visibility:hidden">
+          <rect x="0" y="0" width="400" height="100" style="fill:white;stroke:seagreen;stroke-width:2"/>
+          <text id="levelpopuptext" x="200" y="65" style="fill:seagreen;font-size:40px;text-anchor:middle"/>
+        </g>
+
+        <g id="endgame" transform="translate(100,200)" style="visibility:hidden">
+          <rect x="0" y="0" width="400" height="150" style="fill:white;stroke:red;stroke-width:2"/>
+          <text x="200" y="90"
+            style="fill:red;font-size:40px;text-anchor:middle" cursor="pointer">You Lose !!! :(</text>             
+        </g>
+      </g>  <!--gamearea-->
+
+      <g id="highscoretable" transform="translate(50,100)" style="visibility:hidden">
+          <rect width="500" height="380" style="fill:white;stroke:lightcoral;stroke-width:4;stroke-dasharray:5,10,5;"/>
+          <text x="250" y="50" style="fill:firebrick;font-size:30px;font-weight:bold;text-anchor:middle">
+            High Score Table
+          </text>
+          <text id="highscoretext" y="80" style="font-size:20px;font-weight:bold;fill:darkred;"/>
+            
+            <g transform="translate(200,320)" cursor="pointer" onclick="window.location.reload()">
+              <rect x="0" y="0" width="120" height="30" style="fill:white;stroke:steelblue;stroke-width:2"/>
+              <text x="60" y="20" style="fill:steelblue;font-size:15px;text-anchor:middle;font-weight:bold;">Start Again?</text>
+          </g>   
+      </g>
+
+    </g>
+  </g>
+</svg>
